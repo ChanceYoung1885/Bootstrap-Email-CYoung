@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Death Star Secure Communication</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!--Creating the navbar at the top-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid imperial-navbar">
+              <a class="navbar-brand" href="#"><img class="logo-img" src="empire-logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Incoming</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Outgoing</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Create Message
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Request for Superior</a></li>
+                      <li><a class="dropdown-item" href="#">Command for Subordinates</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Basic Message</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <!--Creating the emails-->
+        <div class="row">
+            <div class="col-md-6 email-list-col">
+                <div class="row email-row">
+                        <div class="col-sm-12 email-sender">Darth Vader</div>
+                        <div class="col-sm-12 email-recipient">Subordinates</div>
+                        <div class="col-sm-12 email-contents">I find your lack of faith disturbing!</div>
+                </div>
+                <div class="row email-row">
+                        <div class="col-sm-12 email-sender">Grand Moff Tarkin</div>
+                        <div class="col-sm-12 email-recipient">Subordinates</div>
+                        <div class="col-sm-12 email-contents">The Imperial Senate will no longer be of any concern to us. I have just received word that the Emperor has dissolved the council permanently. The last remnants of the Old Republic have been swept away.</div>
+                </div>
+                <div class="row email-row">
+                        <div class="col-sm-12 email-sender">Sender</div>
+                        <div class="col-sm-12 email-recipient">Recipient</div>
+                        <div class="col-sm-12 email-contents">Contents</div>
+                </div>
+                <div class="row email-row">
+                        <div class="col-sm-12 email-sender">Sender</div>
+                        <div class="col-sm-12 email-recipient">Recipient</div>
+                        <div class="col-sm-12 email-contents">Contents</div>
+                </div>
+                <div class="row email-row">
+                        <div class="col-sm-12 email-sender">Sender</div>
+                        <div class="col-sm-12 email-recipient">Recipient</div>
+                        <div class="col-sm-12 email-contents">Contents</div>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-6 full-email-col">
+                <div class="col-sm-12 email-sender">Sender</div>
+                <div class="col-sm-12 email-recipient">Recipient</div>
+                <div class="col-sm-12 email-contents">
+                    <p>Before you is an excerpt from the beginning of Emperor Palpatine's speech to the senate. All empire members are required to read it in full. As it is a requirement it has been downloaded to every data pad, simply tap on the excerpt below.</p>
+                    <a href="Emperors Speech.txt">
+                        <p>Citizens of the civilized galaxy, on this day we mark a transition. For a thousand years, the Republic stood as the crowning achievement of civilized beings. But there were those who would set us against one another, and we took up arms to defend our way of life against the Separatists. In so doing, we never suspected that the greatest threat came from within.</p>
+                        <p>The Jedi, and some within our own Senate, had conspired to create the shadow of Separatism using one of their own as the enemy's leader. They had hoped to grind the Republic into ruin. But the hatred in their hearts could not be hidden forever. At last, there came a day when our enemies showed their true natures.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
