@@ -52,6 +52,9 @@ body{
     margin: 5px;
     max-height: 90px;
 }
+.email-row:hover{
+    background-color: rgb(153, 18, 18);
+}
 .selected-email{
     background-color: rgb(153, 18, 18);
 }
