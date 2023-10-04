@@ -8,70 +8,104 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!--Creating the navbar at the top-->
+  <nav class="navbar navbar-expand-lg imperial-navbar">
+      <div class="container-fluid imperial-navbar">
+        <a class="navbar-brand" href="#"><img class="logo-img" src="empire-logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!--Navbar Account button-->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Account</a>
+            </li>
+            <!--Navbar Dropdown menu for creating and sending messages-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Create Message
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Request for Superior</a></li>
+                <li><a class="dropdown-item" href="#">Command for Subordinates</a></li>
+                <li><a class="dropdown-item" href="#">Basic Message</a></li>
+              </ul>
+            </li>
+            <!--Navbar dropdown for messages when in small screens-->
+            <li class="nav-item dropdown d-lg-none">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Message Boxes
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Incoming Messages</a></li>
+                <li><a class="dropdown-item" href="#">Outgoing Messages</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Personal Files</a></li>
+                <li><a href="#" class="dropdown-item">Drafted Messages</a></li>
+                <li><a class="dropdown-item" href="#">Deleted Messages</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Settings</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
     <div class="container">
-        <!--Creating the navbar at the top-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid imperial-navbar">
-              <a class="navbar-brand" href="#"><img class="logo-img" src="empire-logo.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Incoming</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Outgoing</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Create Message
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Request for Superior</a></li>
-                      <li><a class="dropdown-item" href="#">Command for Subordinates</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Basic Message</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+      <!--Creating the sidebar-->
+      <div class="row">
+        <div class="d-none d-lg-block col-md-2 col-sm-4">
+          <div class="row ">
+            <button class="btn sidebar-btn">Incoming Messages</button>
+          </div>
+          <div class="row">
+            <button class="btn sidebar-btn">Outgoing Messages</button>
+          </div>
+          <div class="row">
+            <button class="btn sidebar-btn">Personal Files</button>
+          </div>
+          <div class="row">
+            <button class="btn sidebar-btn">Drafted Messages</button>
+          </div>
+          <div class="row">
+            <button class="btn sidebar-btn">Trash</button>
+          </div>
+        </div>
+        <!--Creating the emails-->
+            <div class="col-md-4 email-list-col">
+              <div class="row email-row selected-email">
+                <div class="col-sm-12 email-sender">Grand Moff Tarkin</div>
+                <div class="col-sm-12 email-recipient">Subordinates</div>
+                <div class="col-sm-12 email-contents">Before you is an excerpt from the beginning of Emperor Palpatine's speech to the senate. All empire members are required to read it in full. As it is a requirement it has been downloaded to every data pad, simply tap on the excerpt below.</div>
+              </div>
+              <div class="row email-row">
+                      <div class="col-sm-12 email-sender">Darth Vader</div>
+                      <div class="col-sm-12 email-recipient">Subordinates</div>
+                      <div class="col-sm-12 email-contents">I find your lack of faith disturbing!</div>
+              </div>
+              <div class="row email-row">
+                      <div class="col-sm-12 email-sender">Grand Moff Tarkin</div>
+                      <div class="col-sm-12 email-recipient">Subordinates</div>
+                      <div class="col-sm-12 email-contents">The Imperial Senate will no longer be of any concern to us. I have just received word that the Emperor has dissolved the council permanently. The last remnants of the Old Republic have been swept away.</div>
+              </div>
+              <div class="row email-row">
+                      <div class="col-sm-12 email-sender">Sender</div>
+                      <div class="col-sm-12 email-recipient">Recipient</div>
+                      <div class="col-sm-12 email-contents">Contents</div>
+              </div>
+              <div class="row email-row">
+                      <div class="col-sm-12 email-sender">Leia Organa</div>
+                      <div class="col-sm-12 email-recipient">Obi Wan Kenobi</div>
+                      <div class="col-sm-12 email-contents">Help me Obi Wan Kenobi! You are my only hope.</div>
               </div>
             </div>
-          </nav>
-        <!--Creating the emails-->
-        <div class="row">
-            <div class="col-md-6 email-list-col">
-                <div class="row email-row">
-                        <div class="col-sm-12 email-sender">Darth Vader</div>
-                        <div class="col-sm-12 email-recipient">Subordinates</div>
-                        <div class="col-sm-12 email-contents">I find your lack of faith disturbing!</div>
-                </div>
-                <div class="row email-row">
-                        <div class="col-sm-12 email-sender">Grand Moff Tarkin</div>
-                        <div class="col-sm-12 email-recipient">Subordinates</div>
-                        <div class="col-sm-12 email-contents">The Imperial Senate will no longer be of any concern to us. I have just received word that the Emperor has dissolved the council permanently. The last remnants of the Old Republic have been swept away.</div>
-                </div>
-                <div class="row email-row">
-                        <div class="col-sm-12 email-sender">Sender</div>
-                        <div class="col-sm-12 email-recipient">Recipient</div>
-                        <div class="col-sm-12 email-contents">Contents</div>
-                </div>
-                <div class="row email-row">
-                        <div class="col-sm-12 email-sender">Sender</div>
-                        <div class="col-sm-12 email-recipient">Recipient</div>
-                        <div class="col-sm-12 email-contents">Contents</div>
-                </div>
-                <div class="row email-row">
-                        <div class="col-sm-12 email-sender">Sender</div>
-                        <div class="col-sm-12 email-recipient">Recipient</div>
-                        <div class="col-sm-12 email-contents">Contents</div>
-                </div>
-            </div>
+            <!--Creating the currently open email-->
             <div class="d-none d-md-block col-md-6 full-email-col">
                 <div class="col-sm-12 email-sender">Sender</div>
                 <div class="col-sm-12 email-recipient">Recipient</div>
@@ -81,6 +115,12 @@
                         <p>Citizens of the civilized galaxy, on this day we mark a transition. For a thousand years, the Republic stood as the crowning achievement of civilized beings. But there were those who would set us against one another, and we took up arms to defend our way of life against the Separatists. In so doing, we never suspected that the greatest threat came from within.</p>
                         <p>The Jedi, and some within our own Senate, had conspired to create the shadow of Separatism using one of their own as the enemy's leader. They had hoped to grind the Republic into ruin. But the hatred in their hearts could not be hidden forever. At last, there came a day when our enemies showed their true natures.</p>
                     </a>
+                </div>
+                <div class="row reply-box">
+                  <textarea name="reply" id="reply" cols="30" rows="10" placeholder="Please respond here"></textarea>
+                </div>
+                <div class="col">
+                  <button class="reply-btn">Respond</button>
                 </div>
             </div>
         </div>

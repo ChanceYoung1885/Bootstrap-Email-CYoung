@@ -1,23 +1,37 @@
 body{
     background-color: rgb(51, 51, 51);
 }
-.full-navbar{
-    background-color: black;
+.container{
+    margin-top: 5px;
 }
+/*Changing the color of the navbar*/
 .imperial-navbar{
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(150, 0, 0);
 }
+/*Locking logo image size in navbar because original was to big*/
 .logo-img{
     max-width: 50px;
 }
+/* btn-outline-success is tweaking colors of the search bar button*/
 .btn-outline-success{
     color: black;
     border-color: black;
 }
 .btn-outline-success:hover{
-    background-color: darkred;
-    color: black;
+    background-color: black;
+    color: white;
 }
+/*sidebar-btn is tweaking the buttons in the sidebar*/
+.sidebar-btn:hover{
+    background-color: rgb(150, 0, 0);
+}
+.sidebar-btn{
+    background-color: lightgray;
+    border-radius: 10px;
+    margin: 2px;
+    height: 90px;
+}
+/*Modifying font sizes and thickness*/
 .email-sender {
     font-weight: bold;
     font-size: larger;
@@ -25,16 +39,21 @@ body{
 .email-recipient{
     font-weight: bold;
 }
+/*Fitting an oversized message into a space too small*/
 .email-contents{
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
 }
+/*Making email messages look presentable*/
 .email-row{
     background-color: lightgray;
     border-radius: 15px;
     margin: 5px;
     max-height: 90px;
+}
+.selected-email{
+    background-color: rgb(153, 18, 18);
 }
 .full-email-col{
     background-color: white;
@@ -51,4 +70,15 @@ body{
     text-wrap: wrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.reply-btn{
+    background-color: rgb(187, 137, 137);
+    border-color: rgb(88, 0, 0);
+    color: rgb(88, 0, 0);
+    margin: 5px;
+    border-radius: 5%;
+}
+/*Making the reply box fit into the full email column*/
+.reply-box{
+    margin: 5px;
 }
